@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#10c0c0c0"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/ivMyProfileImg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tvMyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/ivMyProfileImg"
+        android:gravity="top"
+        android:includeFontPadding="false"
+        android:text="@string/my_name_label" />
+
+    <TextView
+        android:id="@+id/tvMyScreenName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvMyName"
+        android:layout_toRightOf="@+id/ivMyProfileImg"
+        android:gravity="top"
+        android:includeFontPadding="false"
+        android:textColor="@android:color/darker_gray"
+        android:text="@string/my_screen_name_label" />
+
+    <EditText
+        android:id="@+id/etCompose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ivMyProfileImg"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ivMyProfileImg"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:lines="6"
+        android:textColor="#404040"
+        android:background="#10808080"
+        android:scrollbars="vertical" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnTweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/ivMyProfileImg"
+        android:background="@android:color/holo_blue_light"
+        android:textColor="@android:color/white"
+        android:text="@string/btn_tweet" />
+
+</RelativeLayout>

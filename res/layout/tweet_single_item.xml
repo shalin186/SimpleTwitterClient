@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ivProfileImage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/ivProfileImg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/ivProfileImg"
+        android:gravity="top"
+        android:includeFontPadding="false"
+        android:text="@string/user_name_label"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvUserScreenName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvUserName"
+        android:layout_below="@+id/tvUserName"
+        android:layout_toRightOf="@+id/ivProfileImg"
+        android:gravity="top"
+        android:includeFontPadding="false"
+        android:text="@string/screen_name_label"
+        android:textColor="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/tvBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvUserScreenName"
+        android:layout_below="@+id/tvUserScreenName"
+        android:text="@string/tweet_body_label" />
+
+    <TextView
+        android:id="@+id/tvRelativeTimeStamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvUserName"
+        android:layout_alignBottom="@+id/tvUserName"
+        android:layout_alignParentRight="true"
+        android:gravity="top"
+        android:includeFontPadding="false"
+        android:text="@string/relative_time_label"
+        android:textColor="@android:color/darker_gray" />
+
+</RelativeLayout>
